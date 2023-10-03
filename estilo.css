@@ -1,0 +1,494 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.center{
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.header{
+    background-color: #f7f1f1;
+    padding: 1.2em 0;
+    border-bottom: .1em solid #d3bac6;
+}
+
+.header-logo{
+    width: 9em;
+    height: auto;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+.menu{
+    width: 80%;
+    text-align: right;
+}
+
+.menu a{
+    color: #422233;
+    font-size: 1em;
+    text-decoration: none;
+    padding: .9em;
+    display: inline-block;
+}
+
+.menu a:hover{
+    color: #a07c8e;
+}
+
+section.main{
+    background-image: url(imagens/fundo3.png);
+    padding: 3em 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 3em 0;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.main_cta h2{
+    color: #422233;
+    font-size: 2.5em;
+}
+
+.main_cta p{
+    color:#777172;
+    font-size: 1.1em;
+    margin: .8em 0;
+    padding: .4em 1em;
+}
+
+.main_cta button{
+    background-color: #523544;
+    display: inline-block;
+    padding: .4em 1em;
+    color: white;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.sobre-projetos{
+    padding: 5em 0;
+    background-color:#eecedf;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color: #422233;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p{
+    font-size: .9em;
+    color: rgb(83, 81, 81);
+    margin: .8em 0;
+}
+
+.conteudo-sobre{
+    display: flex;
+}
+
+.conteudo-sobre p{
+    margin: 1em 1.1em;
+    color: rgb(41, 35, 35);
+}
+
+.main_content{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-width: 100vw;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    color: #422233;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paragrafos-um{
+    text-align: left;
+    margin-left: 4em;
+    margin-right: 4em;
+
+}
+
+.paragrafos{
+    align-items: center;
+}
+
+@media screen and (max-width: 48em){
+    .main_content{
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        max-width: 100%;
+    }
+    
+    .main_content div{
+        margin: auto;
+        padding: 1em;
+        width: 100%;
+    }
+    
+    .main_content_title{
+        color: #422233;
+        text-align: center;
+    }
+
+    .main_content p{
+        text-align: left;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
+
+.menu-itens{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5em;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-itens.show{
+    opacity: 1;
+}
+
+.menu-itens.hidde{
+    opacity: 0;
+}
+
+.menu-itens a{
+    display: block;
+    text-decoration: none;
+    color: #422233;
+}
+
+.sobre-projetos{
+    padding: 5em 0;
+}
+
+.sobre-empreendedor-img{
+    width: 30%;
+    padding: 0 9em;
+    padding-top: 2em;
+    padding-bottom: 15em;
+}
+
+.sobre-empreendedor-img img{
+    max-width: 100%;
+}
+
+.sobre-empreendedor-content{
+    width: 30%;
+    padding: 0 5em;
+}
+
+.sobre-empreendedor-content h3{
+    color: #422233;
+    margin-top: -.5em;
+ 
+}
+
+.sobre-empreendedor-content p{
+    color: rgb(41, 35, 35);
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.botao button{
+    background-color: #523544;
+    display: inline-block;
+    padding: .4em 1em;
+    color: white;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+.main_content_title-pro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    color: #422233;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 48em){
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-logo{
+        width: 15em;
+    }
+
+    .main_cta h2{
+        font-size: 2em;
+    }
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 1.1em;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu a{
+        display: block;
+        text-align: center;
+    }
+
+    section.main{
+        background-image: url(imagens/fundo1.png);
+        max-width: 100%;
+    }
+
+    .menu-mobile{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-itens a{
+        color:#422233;
+        background-color: #bb98a9;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .menu-itens a:hover{
+        background-color: #694357;
+        color: #f1e3ea;
+    }
+
+    #hamburguer{
+        color: #422233;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    .conteudo-sobre{
+        flex-wrap: wrap;
+    }
+
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 1.1em 1.1em;
+    }
+}
+
+@media screen and (max-width: 70em){
+    section.sobre-empreendedor{
+        padding: 5em 0;
+    }
+    
+    .sobre-empreendedor-img{
+        width: 100%;
+        padding: 1em 0;
+        padding-bottom: 1em;
+        align-items: center;
+    }
+    
+    .sobre-empreendedor-img img{
+        max-width: 100%;
+    }
+    
+    .sobre-empreendedor-content{
+        width: 100%;
+        padding: 1em 1em;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    
+    .sobre-empreendedor-content h3{
+        color: #422233;
+        margin-bottom: 1.2em;
+        text-align: center;
+    }
+    
+    .sobre-empreendedor-content p{
+        color: rgb(41, 35, 35);
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+}
+
+
+footer{
+    letter-spacing: .1em;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+    
+#footer_content{
+    background-color: rgb(31, 29, 29);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3em 3.5em;
+}
+
+#footer_contacts h1{
+    margin-bottom: 1em;
+}
+
+.paragrafo{
+    font-size: .9em;
+    font-family: cursive;
+}
+
+.tamanho-lo{
+    width: 5em;
+    padding-left: 1em;
+}
+
+.config-img-la{
+    width: 5.5em;
+    text-align: center;
+    padding-left: 2em;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.tamanho{
+    width: 3em;
+}
+
+.tamanho-en{
+    width: 1em;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    list-style: none;
+}
+
+.list{
+    padding-top: 2.4em;
+}
+
+.footer-link{
+    color: rgb(160, 152, 152);
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: #a13e73;
+}
+
+#footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#footer-subscribe p{
+    color: rgb(160, 152, 152);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #575153;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75em;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #682b4c;
+    border: none;
+    color: #d4cbcf;
+    padding: 0 1.25em;
+    font-size: 1.25em;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    font-size: 0.9em;
+    padding: 1em;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 48em){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 26em){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3em 2em;
+    }
+
+    .tamanho-lo{
+        padding-left: 0;
+    }
+}
